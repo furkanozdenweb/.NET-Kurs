@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Metin Özellikleri</title>
+    </head>
+    <body>
+    <p>
+        Samet <b>Erdem</b> <strong>Erdem</strong> 
+        <!-- <b> <strong> Tag'leri arasına yazılım içeriklere kalın özelliği verir-->
+        <br/> <!-- Br << Enter Görevi görür alt satıra atar -->
+        Samet <u>Erdem</u> <!-- <u> Altı çizili özelliği katar-->
+        <br/>
+        Samet <i>Erdem</i> <!-- <i> İtalik (Eğik Yazı Özelliği Katar)-->
+        <br/>
+        Samet <del>Erdem</del> <!-- <del> Metnin üzerini çizer -->
+        <br/>
+        Samet <sup>Erdem</sup> m<sup>3</sup> <!-- <sup> Yanında yer aldığı metnin üzerine yazar-->
+        <br/> 
+        Samet <sub>Erdem</sub><!-- <sub> Yanında yer aldığı metnin altına yazar-->
+        <br/>
+        Samet <mark>Erdem</mark> <!-- <mark> Fosforlu kamel özelliği gibi metne vurgu yapmada kullanılır. -->
+    </p>
+
+   Bu günkü ilk Sayfamız index.html'e gitmek için  <a href="index.html" >  tıklayınız.  </a> <!-- 
+       
+    1-) <a> Etiketi farklı bir sayfaya link göndererek diğer sayfaya yönlendirmek için kullanılır 
+    2-) href="" Gönderimi sağlamak istediğimiz sayfa bilgisi eklenir
+    3-) target="_blank" gönderim türü belirlenir "_blank" yazarak farklı sekmede açılacağını vurgularız.
+-->
+
+    <h1>Sosyal Medya Platformları</h1>
+    <ol>
+        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li> <!-- Facebook metnine tıkladığımızda facebook'un internet sitesine link vermiş olduk.-->
+        <li>Twitter</li>
+        <li>İnstagram</li>
+    </ol>
+
+    
+    <h1>Kişisel Web Siteleri</h1>
+    <ol>
+        <li><a href="https://www.sameterdem.com.tr/" target="_blank">Farklı Sekmede Aç Samet Erdem</a></li> <!-- Target'taki "_blank" web sitesini farklı sekmkede açar-->
+        <li><a href="https://www.ahmetsarikaya.com.tr/" target="_self">Aynı Sekmede AçAhmet Sarıkaya</a></li><!-- Target'taki "_self" web sitesini aynı sekmkede açar-->
+        <li><a href="https://www.zenir.com.tr/" target="WebSiteGetir">İframe İçerisinde Aç Gamze Sınır</a></li><!-- Target'taki "WebSiteGetir" Aşağıda yer alan iframe içerisine web sitesini  açar -->
+       
+    </ol>
+
+    <iframe src="index.html" name="WebSiteGetir"  width="100%" height="500px"></iframe>  <!-- İframe Tag'i içerisinde src="" de belirttiğimiz web sitesini sayfaya çağırma işlemi gerçekleşir-->
+
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=121cWsIi50PFfS1Aa9WggTVY0YLqZe5eZ&ehbc=2E312F" width="640" height="480"></iframe>
+
+    <iframe id="Piyasalar" src="https://www.ücretsiz.com/piyasalar.html" style="width:300px; height:70px;" frameborder="0"></iframe>
+
+    </body>
+</html>

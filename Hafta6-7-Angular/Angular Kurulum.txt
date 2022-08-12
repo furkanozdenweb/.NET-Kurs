@@ -1,0 +1,59 @@
+
+npm install -g @angular/cli  >> Angular kurulumu
+npm install -g npx           >> Windows 10,11 kullanım
+
+
+
+npx ng new IlkProjem << Proje Oluşturma
+cd IlkProjem << cd komutuyla projemizin yüklendiği klasöre giriş yapıyoruz!
+
+npx ng serve   << Projemizi çalıştırıyoruz.
+npx ng serve --open  << Projemizi çalıştırıyoruz. ve Tarayıcıyı otomatik açıyor.
+
+
+-----------------------------------------------------------------
+
+
+Yeni component oluşturma
+
+npx ng g component musteri   << Müşteri isimli companent oluşturma, app klasörü içerisnde yeni component dosyamızı oluşturuyoruz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------
+
+app.modules.ts << Uygulama modüler olarak geliştirmek ve bu projede kullanacağımız companentleri belirtiriz.
+
+
+
+----------------------------------------------------------------
+
+Hazır  Companentler Eklemek.
+
+npm install bootstrap -save   <<< Bu komut Bootstrap’ın son versiyonunu projenizin içindeki node_modules klasörüne indiricektir. –save bootstrap’ın ayrıca package.json dosyasına kaydedilmesine yarıyor.
+
+Buraya kadar Bootstrap’ı indirdik ama henüz kullanılabilir durumda değil. Kullanmak için Bootstrap’ı projeye dahil (import) etmemiz gerekiyor. 
+
+
+angular.json << dosyasının içinde styles diye bir dizi bulunuyor. Bu dizinin içine indirdiğimiz Bootstrap’ın adresini veriyoruz.
+
+Örnek: "styles":["src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.css"] << bu kodun içine node_modules olarak eklediğimiz alan ekleniyor.
+
+Bootstrap artık kullanılabilir.
+

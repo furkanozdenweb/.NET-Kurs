@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>İletişim</title>
+</head>
+
+<body>
+    <p>
+        <a href="index.html">GERİ DÖN </a>
+    </p>
+    <table border="1px">
+        <!-- Border="1px" tagi Tablomuza 1 px genişliğinde çerçeve tanımlar-->
+        <caption>İletişim Bilgileri</caption>
+        <tr>
+            <th>Adı ve Soyadı</td>
+            <th>Yakınlık Derecesi</th>
+            <th>Telefon Numarası</td>
+            <th>Cinsiyet</td>
+        </tr>
+        <tr>
+            <td>Samet Erdem</td>
+            <td>Kendisi</td>
+            <td>0536 032 95 32</td>
+            <td rowspan="2">Erkek</td>
+        </tr>
+        <tr>
+            <td>Ege Ali Erdem</td>
+            <td>Oğlu </td>
+            <td>Yok</td>
+        </tr>
+        <tr>
+            <td>Özge Ulusoy Erdem</td>
+            <td colspan="2">Eşi</td>
+            <td>Kadın</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <form action="index.html" method="GET">
+        <label for="AdSoyad">Adınız Soyadınız</label> <input type="Text" id="isim" name="AdSoyad" required /> <br />
+        <label for="Telefon">Telefon Numaranız</label> <input type="Text"  id="telefon" name="Telefon" /> <br>
+        <label for="Cinsiyet">Cinsiyet</label> <input type="radio" name="Cinsiyet" value="Erkek" /> Erkek <input
+            type="radio" name="Cinsiyet" value="Bayan" /> Bayan <br />
+        <label for="Konu">Konu</label>
+        <select name="Konu">
+            <option>Bilgi Alma</option>
+            <option selected>Şikayet</option>
+            <option>Diğer</option>
+            <option>Adet</option>
+        </select>
+        <br />
+        <label for="Mesaj">Mesajınız</label>
+        <textarea name="Mesaj" rows="5">
+
+            </textarea><br>
+
+        <label for="Cv">Cv Yükleme</label> <input type="file" name="Cv" /> <br>
+
+        <input type="checkbox" name="Onay"> <label for="Onay"> KVKK Aydınlatma metnini okudum kabul
+            ediyorum.</label><br>
+
+        <button>Sıfırla</button>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>

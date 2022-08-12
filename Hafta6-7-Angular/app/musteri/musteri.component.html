@@ -1,0 +1,68 @@
+
+
+<h1  class="Kirmizi" (click)="DenemeFonksiyon()">Müşteri: {{musteriAdi}} Hoşgeldin!</h1>
+
+<p>Açıklama metni burada Açıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni buradaAçıklama metni burada</p>
+
+
+<ul >
+    <li *ngFor="let musteri of musteriler"  (click)="MusteriSecIlk(musteri)">  <!-- Fonksiyon işlemini parantez içinde event işlemini yazarak kolayca çalıştırabiliriz. MusteriSec isimli fonksiyonumuz çalışıyor ve döngüde dönen değeri gönderiyoruz.-->
+       {{musteri.adi}}   {{musteri.yas}} 
+    </li>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ngIf  ve  ngFor birlikte kullanım-->
+
+<div *ngFor="let musteri of musteriler"  (click)="MusteriSec(musteri)" style="display:none;" >
+    <div  *ngIf="musteri.yas<30" > <strong> {{musteri.adi}}   {{musteri.yas}} </strong></div>
+</div>
+
+
+
+<strong *ngIf="secilenMusteri">{{secilenMusteri}} seçtiniz!</strong>  <!-- ngIf Gönderilen değer eğer undefined değil ise demek bunu sonradan ekleyerek görebiliriz.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ngIf  ve  ngFor birlikte kullanım-->
+
+<div *ngFor="let musteri of musteriler"  (click)="MusteriSec(musteri)" >
+
+    <div  *ngIf="musteri.yas<30; else  DegilseCalis "> <strong> {{musteri.adi}}   {{musteri.yas}} </strong></div>
+</div>
+
+<!-- Else işleminde çalışacak olan template otomatik olarak belirtilir.-->
+
+<ng-template #DegilseCalis><u>Belirtilen yas altı değil.</u></ng-template>

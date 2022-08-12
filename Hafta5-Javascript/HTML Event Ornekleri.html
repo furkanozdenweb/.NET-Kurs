@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>addEventListener Örnekleri</h1>
+<p>Merhaba, Aşağıdaki butonun üzerine gelme durumuna <strong>"mouseover"</strong>, Tıklama durumuna <strong>"click"</strong>  ve mouse üzerinden çıkma durumuna <strong>"mouseout"</strong> diyerek.  <strong>"addEventListener"</strong> değerini kullanabiliriz.</p>
+
+<button id="ButtonIdmiz">Dene Bakalım.</button>
+
+<p id="YazilarGelsin"></p>
+
+<script>
+var x = document.getElementById("ButtonIdmiz");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+    document.getElementById("YazilarGelsin").innerHTML += "Mouse Üzerinde!<br>";
+}
+
+function mySecondFunction() {
+    document.getElementById("YazilarGelsin").innerHTML += "Tıklandı!<br>";
+}
+
+function myThirdFunction() {
+    document.getElementById("YazilarGelsin").innerHTML += "Mouse Üzerinden Değil.!<br>";
+}
+</script>
+
+</body>
+</html>

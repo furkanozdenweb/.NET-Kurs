@@ -1,0 +1,8 @@
+npm install -g typescript  >> Typescript Kurulumu
+npm install -g npx         >> Windows 10,11 kullanım
+npm install -g nodemon     >> Nodemon Kurulumu
+
+
+npx tsc Dosyaadi.ts
+
+npx nodemon dosyaadi.ts

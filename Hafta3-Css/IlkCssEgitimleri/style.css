@@ -1,0 +1,58 @@
+
+div{
+    margin-top:10px; /* Yukarıdan dış elementle arasında olan boşluğu tanımlarız */
+    margin-left:5px; /* Solda dış elementle arasında olan boşluğu tanımlarız */
+    margin-right:5px;  /* Sağdan dış elementle arasında olan boşluğu tanımlarız */
+    margin-bottom:3px;  /* Aşağıdan dış elementle arasında olan boşluğu tanımlarız */
+    padding:10px; /* Top, Left, Right, Bottom değerlerini vermediğimiz için Tüm alanlardan Aynı Ölçüde Element içindeki boşluğu tanımlar */
+    text-align: justify; /*  Yazının özelliklerini belirtiriz. - Left : Sola dayalı , Center: Ortala, Right: Saha Dayalı, Justify: Sağa sola yasla*/
+    border:3px solid black; /*Çerçeve Tanımlamamıza yardımcı olur px genişliği solid tipini ve black renk kodunu belirtir */
+    background-color: #d4cdcd; /* Arkaplan Rengi tanımlama */
+}
+
+    h1{   
+        text-align:center;  /*  text-align Metni izalamak için kullanırız */
+        color:#e76b23;  /* Yazı rengini belirler */
+    }
+  
+     table{
+        margin-top:20px;
+        width: 100%;
+    }
+
+     table,td,th{
+        border:1px solid gray;
+        border-collapse: collapse;
+        padding:10px;
+    }
+
+     tr:hover{  /* HOVER Eventiyle yani üzerine geldiğimizde tr SATIRIN tamamının stilini tanımlıyoruz. */
+        background-color: yellow;
+    }
+    
+     tr:nth-child(even){
+        background-color: rgb(241, 173, 173);
+    }
+     tr:nth-child(odd){
+        background-color: rgb(159, 241, 252);
+    }
+     th{
+        background-color: rgb(209, 196, 196);
+    }
+ 
+
+
+    input[type=text]{ /* input nesnelerine type=text tanımıyla text tipi olan inputlara css stilleri tanımlarız */ 
+        width: 100%;
+        padding: 10px;
+        background-color: #e76b23;
+    }
+    input[type=password]{ /* input nesnelerine type=password tanımıyla password tipi olan inputlara css stilleri tanımlarız */ 
+        width: 100%;
+        padding: 10px;
+    }
+    input[type=password]:hover{  /* input nesnelerinde tipi password olan inputa Event yani mouse ile üzerine gelme durumunda still tanımlarını yapıyoruz. */
+    background-color: blue;
+    }
+
+    
